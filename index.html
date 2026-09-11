@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tower ゴミ箱 くらべて選ぶ｜家具のソムリエ</title>
+<meta name="description" content="山崎実業 tower のゴミ箱を、置き場所・容量・特徴・価格でならべて比較。分別数や個数違いのページ案内もあわせて整理しています。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Jost:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#000;
+    --paper:#fff;
+    --paper-2:#f5f5f5;
+    --paper-3:#ececec;
+    --line:#e2e2e2;
+    --line-mid:#cfcfcf;
+    --sub:#555;
+    --red:#ee0001;
+    --red-deep:#c40000;
+    --red-soft:#ffeaea;
+    color-scheme: light;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    line-height:1.9;
+    font-size:16px;
+    letter-spacing:.02em;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit}
+
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  .wrap-narrow{max-width:920px;margin:0 auto;padding:0 24px}
+
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5em;
+    font-weight:700;font-size:.8rem;color:var(--ink);letter-spacing:.06em;
+  }
+  .eyebrow::before{content:"";width:.55em;height:.55em;background:var(--red)}
+
+  .en{font-family:"Jost",sans-serif}
+
+  /* ---------- top banner ---------- */
+  .topbar{background:var(--paper-2);border-bottom:1px solid var(--line);padding:14px 16px 10px;text-align:center}
+  .topbar-banner{display:block;max-width:780px;margin:0 auto}
+  .topbar-banner img{width:100%;height:auto;display:block}
+  .topbar-link{display:inline-flex;align-items:center;margin-top:3px;font-size:.68rem;font-weight:700;color:var(--sub);text-decoration:none;border-bottom:1px solid var(--line-mid);padding-bottom:1px}
+  .topbar-link::after{content:"";display:inline-block;margin-left:.4em;border-left:4px solid var(--red);border-top:3px solid transparent;border-bottom:3px solid transparent}
+
+  /* ---------- site header ---------- */
+  .site-head{border-bottom:1px solid var(--line);padding:14px 24px}
+  .site-head a{display:inline-block}
+  .site-head img{height:26px;width:auto;display:block}
+
+  /* ---------- FV ---------- */
+  .fv{padding:clamp(36px,7vw,72px) 0 0}
+  .fv-inner{max-width:1120px;margin:0 auto;padding:0 24px}
+  .fv-word{margin:.22em 0 0}
+  .fv-word img{width:clamp(220px,42vw,460px);height:auto;display:block}
+  .fv-kicker{font-weight:700;color:var(--sub);font-size:clamp(.95rem,1.8vw,1.15rem);margin-top:.9em}
+  .fv h1{
+    font-family:"Noto Sans JP",sans-serif;font-weight:900;
+    font-size:clamp(1.7rem,4.4vw,2.8rem);line-height:1.5;
+    margin:.3em 0 .6em;
+  }
+  .fv h1 .mark{color:var(--red)}
+  .fv-lead{font-size:clamp(.96rem,1.5vw,1.1rem);color:var(--ink);max-width:36em}
+  .fv-meta{margin-top:1.6em;display:flex;flex-wrap:wrap;gap:0}
+  .fv-meta span{
+    border:1px solid var(--ink);border-left:none;padding:.4em 1.1em;font-size:.78rem;color:var(--ink);font-weight:500;
+  }
+  .fv-meta span:first-child{border-left:1px solid var(--ink)}
+  .fv-scrollhint{display:inline-flex;align-items:center;gap:.5em;margin-top:1.8em;font-size:.82rem;font-weight:700;color:var(--ink)}
+  .fv-scrollhint::after{
+    content:"";width:8px;height:8px;border-right:2px solid var(--red);border-bottom:2px solid var(--red);
+    transform:rotate(45deg);animation:bob 1.4s ease-in-out infinite;
+  }
+  @keyframes bob{0%,100%{transform:rotate(45deg) translate(0,0)}50%{transform:rotate(45deg) translate(3px,3px)}}
+  @media (prefers-reduced-motion:reduce){.fv-scrollhint::after{animation:none}}
+
+  .fv-photo{width:100%;margin-top:clamp(28px,5vw,52px);background:var(--paper-2)}
+  .fv-photo img{width:100%;height:auto;display:block;max-height:60vh;object-fit:cover}
+  .fv-photo figcaption{
+    max-width:1120px;margin:0 auto;padding:.6em 24px 0;font-size:.74rem;color:var(--sub);
+    font-family:"Jost",sans-serif;letter-spacing:.03em;
+  }
+
+  /* ---------- section ---------- */
+  section{padding:clamp(52px,8vw,92px) 0}
+  section + section{border-top:1px solid var(--line)}
+  .sec-head{margin-bottom:clamp(26px,4vw,44px)}
+  .sec-head h2{font-weight:900;font-size:clamp(1.5rem,3.4vw,2.3rem);line-height:1.5;margin:.3em 0 .35em}
+  .sec-head p{color:var(--sub);max-width:42em;font-size:.97rem}
+
+  /* ---------- 共通仕様 ---------- */
+  .common{background:var(--paper-2);padding:clamp(24px,4vw,44px)}
+  .common-lead{font-weight:700;font-size:clamp(1.05rem,1.9vw,1.3rem);margin-bottom:1.1em}
+  .common-tags{list-style:none;display:flex;flex-wrap:wrap;gap:.6em}
+  .common-tags li{
+    background:var(--paper);border:1.5px solid var(--ink);color:var(--ink);font-weight:700;
+    font-size:clamp(.92rem,1.6vw,1.08rem);padding:.45em 1.1em;
+  }
+  .common-note{margin-top:1.3em;font-size:.9rem;color:var(--sub);max-width:46em}
+
+  .bridge{margin:clamp(34px,5vw,56px) auto 0;max-width:40em;text-align:center}
+  .bridge-q{font-weight:900;font-size:clamp(1.35rem,3vw,1.9rem);margin-bottom:.6em}
+  .bridge-a{font-size:1.02rem;line-height:2}
+  .bridge-a b{color:var(--red-deep);font-weight:700;white-space:nowrap}
+
+  /* ---------- 診断アコーディオン ---------- */
+  .quiz{display:grid;grid-template-columns:1fr 1fr;gap:.8em 1.4em;align-items:start}
+  .quiz-hint{grid-column:1 / -1;font-size:.9rem;color:var(--sub);margin-bottom:.4em}
+  .q-item{border:1.5px solid var(--ink);background:var(--paper);transition:box-shadow .2s}
+  .q-item.open{box-shadow:4px 4px 0 var(--red)}
+  .q-head{
+    width:100%;display:flex;align-items:center;gap:1em;background:none;border:0;cursor:pointer;text-align:left;
+    font:inherit;font-weight:700;color:var(--ink);font-size:clamp(1rem,2vw,1.16rem);
+    padding:clamp(1em,2.4vw,1.3em) clamp(1.1em,2.6vw,1.5em);
+  }
+  .q-head .q-t{flex:1}
+  .q-ico{position:relative;width:18px;height:18px;flex:none}
+  .q-ico::before,.q-ico::after{content:"";position:absolute;background:var(--ink);transition:transform .2s,background .2s}
+  .q-ico::before{left:0;right:0;top:8px;height:2px}
+  .q-ico::after{top:0;bottom:0;left:8px;width:2px}
+  .q-item.open .q-ico::before,.q-item.open .q-ico::after{background:var(--red)}
+  .q-item.open .q-ico::after{transform:scaleY(0)}
+  .q-body{overflow:hidden;max-height:0;transition:max-height .32s ease}
+  .q-item.open .q-body{max-height:480px}
+  .q-body-inner{padding:0 clamp(1.1em,2.6vw,1.5em) clamp(1.1em,2.4vw,1.4em);border-top:1px dashed var(--line-mid)}
+  .q-body-inner p{font-size:.96rem;margin:.9em 0}
+  .chips{display:flex;flex-wrap:wrap;gap:.5em}
+  .chip{display:inline-flex;align-items:center;gap:.4em;border:1px solid var(--ink);color:var(--ink);font-weight:700;font-size:.86rem;padding:.4em 1em;text-decoration:none}
+  .chip::after{content:"";border-left:5px solid var(--red);border-top:4px solid transparent;border-bottom:4px solid transparent}
+  .chip:hover{background:var(--ink);color:#fff}
+  .chip:hover::after{border-left-color:#fff}
+
+  /* ---------- 実寸ビジュアル ---------- */
+  .viz-block{margin-top:2.2em}
+  .viz-block h3{font-weight:900;font-size:1.12rem;margin-bottom:.2em}
+  .viz-block .note{color:var(--sub);font-size:.83rem;margin-bottom:1.3em}
+  .tap-note{display:inline-flex;align-items:center;gap:.4em;margin-bottom:1.1em;font-size:.8rem;font-weight:700;color:var(--ink)}
+  .tap-note::before{content:"";width:.7em;height:.7em;border:2px solid var(--red);border-radius:50%}
+
+  .foot-scale{display:flex;flex-wrap:wrap;gap:24px 26px;align-items:flex-end;padding:24px;background:var(--paper-2)}
+  .foot-item{width:max-content;text-decoration:none;color:inherit;display:block}
+  .foot-box{border:2px solid var(--ink);background:var(--paper)}
+  .foot-item:hover .foot-box{background:var(--paper-3)}
+  .foot-box.dashed{border-style:dashed}
+  .foot-item .fi-name{font-size:.8rem;margin-top:.5em;font-weight:700;display:flex;align-items:center;gap:.3em}
+  .foot-item .fi-name::after{content:"";border-left:5px solid var(--red);border-top:4px solid transparent;border-bottom:4px solid transparent;opacity:0;transition:opacity .15s}
+  .foot-item:hover .fi-name::after{opacity:1}
+  .foot-item .fi-dim{font-size:.73rem;color:var(--sub);font-family:"Jost",sans-serif;letter-spacing:.04em}
+  .ruler{display:flex;align-items:center;gap:.6em;margin-top:8px;color:var(--sub);font-size:.74rem;font-family:"Jost",sans-serif;letter-spacing:.1em}
+  .ruler .bar{height:8px;border-left:2px solid var(--sub);border-right:2px solid var(--sub);border-bottom:2px solid var(--sub)}
+
+  .cap-chart{display:grid;gap:.5em;padding:24px;background:var(--paper-2)}
+  .cap-row{display:grid;grid-template-columns:minmax(120px,180px) 1fr;gap:1em;align-items:center;text-decoration:none;color:inherit;padding:.28em .3em;transition:background .15s}
+  .cap-row:hover{background:var(--paper-3)}
+  .cap-row .cr-name{font-size:.86rem;font-weight:700;display:flex;align-items:center;gap:.3em}
+  .cap-row .cr-name::after{content:"";border-left:5px solid var(--red);border-top:4px solid transparent;border-bottom:4px solid transparent;opacity:0;transition:opacity .15s}
+  .cap-row:hover .cr-name::after{opacity:1}
+  .cap-track{position:relative;height:28px;background:var(--paper);border:1px solid var(--ink)}
+  .cap-fill{position:absolute;left:0;top:0;bottom:0;background:var(--ink);display:flex;align-items:center;justify-content:flex-end;padding-right:.6em}
+  .cap-fill span{color:#fff;font-size:.76rem;font-family:"Jost",sans-serif;font-weight:600;letter-spacing:.03em;white-space:nowrap}
+
+  /* ---------- 比較表 ---------- */
+  .table-scroll{overflow-x:auto;border:1px solid var(--ink);-webkit-overflow-scrolling:touch}
+  table.compare{border-collapse:collapse;width:100%;min-width:860px;font-size:.9rem}
+  table.compare th,table.compare td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  table.compare td:nth-child(2),
+  table.compare td:nth-child(3),
+  table.compare td:nth-child(4),
+  table.compare td:nth-child(5){white-space:nowrap}
+  table.compare thead th{background:var(--ink);color:#fff;font-weight:500;font-size:.8rem;letter-spacing:.04em;white-space:nowrap;position:sticky;top:0;z-index:3}
+  table.compare tbody th{position:sticky;left:0;z-index:2;background:var(--paper-2);font-weight:700;min-width:190px}
+  table.compare thead th:first-child{z-index:4}
+  table.compare tbody tr:hover td,table.compare tbody tr:hover th{background:var(--paper-3)}
+  table.compare tbody tr.pick td,table.compare tbody tr.pick th{background:var(--red-soft);box-shadow:inset 4px 0 0 var(--red)}
+  .t-code{display:block;font-size:.7rem;color:var(--sub);font-family:"Jost",sans-serif;letter-spacing:.04em;font-weight:600;margin-top:.2em}
+  .t-num{font-family:"Jost","Noto Sans JP",sans-serif;font-weight:600;letter-spacing:.02em}
+  .t-price{font-weight:900;color:var(--ink);white-space:nowrap}
+  .t-link{white-space:nowrap;font-weight:700;font-size:.82rem;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--red);padding-bottom:1px}
+  .sortbar{display:flex;flex-wrap:wrap;gap:.5em;align-items:center;margin-bottom:1em;font-size:.85rem;color:var(--sub)}
+  .sortbar button{font:inherit;font-size:.82rem;font-weight:700;background:var(--paper);border:1.5px solid var(--ink);color:var(--ink);padding:.45em 1.1em;cursor:pointer}
+  .sortbar button[aria-pressed="true"]{background:var(--ink);color:#fff}
+  .table-hint{margin-top:.9em;font-size:.8rem;color:var(--sub)}
+
+  /* ---------- 商品詳細 ---------- */
+  .group{margin-top:clamp(38px,6vw,64px)}
+  .group-title{display:flex;align-items:center;gap:.8em;margin-bottom:1.5em}
+  .group-title .g-no{font-family:"Jost",sans-serif;color:#fff;background:var(--red);font-size:.9rem;padding:.2em .65em;letter-spacing:.02em;font-weight:600}
+  .group-title h3{font-weight:900;font-size:clamp(1.2rem,2.6vw,1.6rem)}
+
+  .item{display:grid;grid-template-columns:minmax(0,460px) minmax(0,1fr);gap:clamp(24px,4vw,56px);padding:clamp(24px,4vw,36px) 0;border-bottom:1px solid var(--line)}
+  .item:last-child{border-bottom:none}
+  .item-media{align-self:start;position:sticky;top:16px}
+  .item-media .frame{background:var(--paper-2);border:1px solid var(--line);aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:6px}
+  .item-media .frame img{width:100%;height:100%;object-fit:contain}
+  .item-media .cap{margin-top:.6em;font-size:.75rem;color:var(--sub);font-family:"Jost",sans-serif;letter-spacing:.05em}
+
+  .item-body h4{font-weight:900;font-size:clamp(1.1rem,2.3vw,1.4rem);line-height:1.5;margin-bottom:.15em}
+  .item-body .sub{color:var(--sub);font-size:.82rem;margin-bottom:1em}
+
+  .spec-strip{display:flex;flex-wrap:wrap;border:1px solid var(--ink);margin-bottom:1.3em}
+  .spec-strip div{flex:1 1 120px;padding:.75em 1em;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .spec-strip div:last-child{border-right:none}
+  .spec-strip dt{font-size:.68rem;letter-spacing:.1em;color:var(--sub);font-weight:700}
+  .spec-strip dd{font-size:1rem;font-weight:700;margin-top:.15em}
+  .spec-strip dd.big{font-family:"Jost","Noto Sans JP",sans-serif;font-size:1.3rem;line-height:1.25}
+
+  .blk{margin-bottom:1.1em}
+  .blk .bh{font-size:.78rem;letter-spacing:.04em;color:var(--ink);font-weight:700;margin-bottom:.4em;border-bottom:2px solid var(--red);display:inline-block;padding-bottom:.1em}
+  .blk ul{list-style:none;display:grid;gap:.28em}
+  .blk li{position:relative;padding-left:1.1em;font-size:.95rem}
+  .blk li::before{content:"";position:absolute;left:0;top:.85em;width:.42em;height:2px;background:var(--ink)}
+
+  .also{background:var(--paper-2);border-left:4px solid var(--red);padding:.85em 1.1em;font-size:.9rem;margin-bottom:1.2em}
+  .also b{font-weight:700}
+
+  .buy{display:inline-flex;align-items:center;gap:.7em;font-weight:700;font-size:1rem;background:var(--ink);color:#fff;padding:.75em 1.7em;text-decoration:none;transition:background .2s}
+  .buy:hover{background:var(--red)}
+  .buy .price{font-family:"Jost","Noto Sans JP",sans-serif;font-weight:700}
+  .buy::after{content:"";border-left:6px solid #fff;border-top:5px solid transparent;border-bottom:5px solid transparent}
+
+  /* ---------- 別ページ整理 ---------- */
+  .combo{display:grid;gap:1em}
+  .combo-card{border:1.5px solid var(--ink);background:var(--paper);padding:clamp(20px,3vw,30px)}
+  .combo-card h3{font-weight:900;font-size:1.15rem;margin-bottom:.55em;display:flex;align-items:center;gap:.6em;flex-wrap:wrap}
+  .combo-card h3 .tag{font-size:.72rem;letter-spacing:.02em;color:#fff;background:var(--ink);padding:.28em .7em;font-weight:700}
+  .combo-card ul{list-style:none;display:grid;gap:.5em;margin-top:.3em}
+  .combo-card li{position:relative;padding-left:1.3em;font-size:.95rem}
+  .combo-card li::before{content:"";position:absolute;left:0;top:.7em;border-left:6px solid var(--red);border-top:5px solid transparent;border-bottom:5px solid transparent}
+  .combo-card .verdict{margin-top:.8em;padding-top:.7em;border-top:1px dashed var(--line-mid);font-size:.92rem}
+  .combo-card .verdict b{color:var(--red-deep)}
+  .combo-card li a{color:var(--ink);font-weight:700;text-decoration:none;border-bottom:2px solid var(--red);padding-bottom:1px}
+  .combo-card li a:hover{color:var(--red-deep)}
+
+  /* ---------- まとめ ---------- */
+  .pick-list{display:grid;gap:.6em}
+  .pick-row{display:grid;grid-template-columns:minmax(190px,260px) 1fr;gap:.5em 1.6em;align-items:baseline;background:var(--paper-2);padding:1em 1.2em;border-left:4px solid var(--ink)}
+  .pick-row .p-need{font-weight:900;font-size:1.02rem}
+  .pick-row .p-ans{font-size:.95rem;color:var(--sub)}
+  .pick-row .p-ans b{color:var(--red-deep);font-weight:700}
+
+  footer{border-top:1px solid var(--line);padding:40px 0 64px;color:var(--sub);font-size:.82rem}
+  footer p{margin-bottom:.4em;max-width:48em}
+
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+  /* ---------- responsive ---------- */
+  @media (max-width:860px){
+    .item{grid-template-columns:1fr}
+    .item-media{max-width:420px;position:static}
+    .pick-row{grid-template-columns:1fr;gap:.15em}
+    .cap-row{grid-template-columns:1fr;gap:.15em}
+    .cap-row .cr-name{font-size:.82rem}
+    .quiz{grid-template-columns:1fr}
+  }
+  @media (max-width:560px){
+    body{font-size:15px}
+    .wrap,.wrap-narrow,.fv-inner{padding:0 18px}
+    table.compare{font-size:.82rem}
+    table.compare th,table.compare td{padding:11px 12px}
+    .spec-strip div{flex-basis:calc(50% - 1px)}
+  }
+</style>
+</head>
+<body>
+
+<div class="site-head">
+  <a href="https://www.rakuten.ne.jp/gold/sommelier/index.html" target="_blank" rel="noopener">
+    <img src="images/sommelier-logo.svg" alt="家具のソムリエ">
+  </a>
+</div>
+
+<div class="topbar">
+  <a class="topbar-banner" href="https://www.rakuten.ne.jp/gold/sommelier/c/tower/index.html" target="_blank" rel="noopener">
+    <img src="https://image.rakuten.co.jp/sommelier/cabinet/kagu_banner_sp1219.jpg" alt="家具のソムリエ" width="1080" height="210">
+  </a>
+  <a class="topbar-link" href="https://www.rakuten.ne.jp/gold/sommelier/c/tower/index.html" target="_blank" rel="noopener">山崎実業商品一覧はこちら</a>
+</div>
+
+<header class="fv">
+  <div class="fv-inner">
+    <span class="eyebrow">山崎実業 tower ／ 家具のソムリエ</span>
+    <p class="fv-word"><img src="images/tower-logo.png" alt="tower"></p>
+    <p class="fv-kicker">白×黒、シンプルなデザインは共通。</p>
+    <h1>ゴミ箱選ぶなら、<span class="mark">置き場所</span>で選ぶ。</h1>
+    <p class="fv-lead">
+      山崎実業 tower のゴミ箱を、<strong>置き場所・容量・特徴・価格</strong>でならべて比較しました。
+      分別数や個数違いのページ案内も最後にまとめていますので、あわせてご覧ください。
+    </p>
+    <div class="fv-meta">
+      <span>価格 1,100〜9,790円（税込）</span>
+      <span>対応 キッチン・リビング・トイレ・車内 など</span>
+      <span>2026年9月 時点</span>
+    </div>
+    <div class="fv-scrollhint">くらべてみる</div>
+  </div>
+  <figure class="fv-photo">
+    <img src="images/fv-toilet-white.jpg" alt="tower トイレポット 奥行きスリムを置いた例" width="1000" height="655">
+    <figcaption class="en">tower — in the room</figcaption>
+  </figure>
+</header>
+
+<main>
+
+  <!-- 共通仕様 -->
+  <section id="common">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">まずは、知っておきたいこと</span>
+        <h2>tower のゴミ箱は、<br>置き場所ごとに専用設計です。</h2>
+      </div>
+      <div class="common reveal">
+        <p class="common-lead">だからこそ種類が多く、迷いやすい。まずは共通点を確認しましょう。</p>
+        <ul class="common-tags">
+          <li>ホワイト／ブラック 2色</li>
+          <li>tower の統一デザイン</li>
+          <li>樹脂・スチールの丈夫な素材</li>
+          <li>山崎実業 公式</li>
+        </ul>
+        <p class="common-note">パーツを分解して洗えるものが多く、汚れても手入れしやすい設計です。対応するゴミ袋のサイズや仕様は商品によって異なります。今回ご紹介する10点はすべて送料無料です。</p>
+      </div>
+      <div class="bridge reveal">
+        <p class="bridge-q">では、何で選べばいい？</p>
+        <p class="bridge-a">答えは<b>置き場所</b>です。「どこで使うか」を決めれば、必要な<b>容量</b>やデザインも自然と決まります。<br>この特集は、使う場所ごとにtowerのゴミ箱をくらべられるようにつくりました。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- かんたん診断 -->
+  <section id="navi">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">かんたん診断</span>
+        <h2>使う場所から、しぼり込む</h2>
+        <p>置き場所が決まれば、必要な容量やデザインもおのずと絞れます。「隠したいか」「分別したいか」もあわせて考えると失敗しません。</p>
+      </div>
+      <div class="quiz reveal">
+        <p class="quiz-hint">気になるものをタップすると、おすすめが開きます。</p>
+
+        <div class="q-item">
+          <button class="q-head" type="button" aria-expanded="false"><span class="q-t">キッチンでしっかり分別したい</span><span class="q-ico" aria-hidden="true"></span></button>
+          <div class="q-body"><div><div class="q-body-inner">
+            <p>燃えるゴミ・ペットボトル・缶などをまとめて分別したいなら、キャスター付きのワゴンタイプ。食器棚下などのすき間に収めたいならスリムタイプが向いています。</p>
+            <div class="chips">
+              <a class="chip" href="https://item.rakuten.co.jp/sommelier/tower-043/" target="_blank" rel="noopener">分別ダストワゴン 3分別</a>
+              <a class="chip" href="https://item.rakuten.co.jp/sommelier/ymj-00557/" target="_blank" rel="noopener">スリム蓋付きゴミ箱</a>
+            </div>
+          </div></div></div>
+        </div>
+
+        <div class="q-item">
+          <button class="q-head" type="button" aria-expanded="false"><span class="q-t">コンロ・シンクまわりに小さく置きたい</span><span class="q-ico" aria-hidden="true"></span></button>
+          <div class="q-body"><div><div class="q-body-inner">
+            <p>三角コーナー代わりのポリ袋ホルダーから、扉やタイルに取り付けるタイプまで。置き場所を増やさずに設置できます。</p>
+            <div class="chips">
+              <a class="chip" href="https://item.rakuten.co.jp/sommelier/ymj-00483/" target="_blank" rel="noopener">ポリ袋エコホルダー</a>
+              <a class="chip" href="https://item.rakuten.co.jp/sommelier/ymj-00241/" target="_blank" rel="noopener">マグネット＆シンク扉ゴミ箱</a>
+              <a class="chip" href="https://item.rakuten.co.jp/sommelier/ymj-01526/" target="_blank" rel="noopener">密閉ゴミ箱（フィルムフック）</a>
+            </div>
+          </div></div></div>
+        </div>
+
+        <div class="q-item">
+          <button class="q-head" type="button" aria-expanded="false"><span class="q-t">リビング・寝室をすっきりさせたい</span><span class="q-ico" aria-hidden="true"></span></button>
+          <div class="q-body"><div><div class="q-body-inner">
+            <p>袋を掛けても外から見えないスクエアなフォルム。9Lサイズで、洗面所用にもちょうどいい大きさです。</p>
+            <div class="chips">
+              <a class="chip" href="https://item.rakuten.co.jp/sommelier/ymj-00279/" target="_blank" rel="noopener">トラッシュカン</a>
+            </div>
+          </div></div></div>
+        </div>
+
+        <div class="q-item">
+          <button class="q-head" type="button" aria-expanded="false"><span class="q-t">ベッドサイドで使いたい</span><span class="q-ico" aria-hidden="true"></span></button>
+          <div class="q-body"><div><div class="q-body-inner">
+            <p>ティッシュケースとゴミ箱が一体化。ベッドフレームやヘッドボードに引っ掛けて、手の届く場所に設置できます。</p>
+            <div class="chips">
+              <a class="chip" href="https://item.rakuten.co.jp/sommelier/ymj-01404/" target="_blank" rel="noopener">ティッシュ＆ダストボックス</a>
+            </div>
+          </div></div></div>
+        </div>
+
+        <div class="q-item">
+          <button class="q-head" type="button" aria-expanded="false"><span class="q-t">トイレをコンパクトにまとめたい</span><span class="q-ico" aria-hidden="true"></span></button>
+          <div class="q-body"><div><div class="q-body-inner">
+            <p>奥行きスリムなタイプはトイレの隅にすっきり。手を触れずに捨てたいならペダル式が便利です。</p>
+            <div class="chips">
+              <a class="chip" href="https://item.rakuten.co.jp/sommelier/ymj-01953/" target="_blank" rel="noopener">トイレポット（奥行きスリム）</a>
+              <a class="chip" href="https://item.rakuten.co.jp/sommelier/ymj-00144/" target="_blank" rel="noopener">ペダル式トイレポット</a>
+            </div>
+          </div></div></div>
+        </div>
+
+        <div class="q-item">
+          <button class="q-head" type="button" aria-expanded="false"><span class="q-t">車の中で使いたい</span><span class="q-ico" aria-hidden="true"></span></button>
+          <div class="q-body"><div><div class="q-body-inner">
+            <p>ファミリーカーの座席間にちょうどいいサイズ。ドリンクや携帯電話を置ける凹みもあり、フロア固定パーツ付きで安定します。</p>
+            <div class="chips">
+              <a class="chip" href="https://item.rakuten.co.jp/sommelier/ymj-00957/" target="_blank" rel="noopener">車載用コンソールゴミ箱</a>
+            </div>
+          </div></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 実寸ビジュアル -->
+  <section id="size">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">サイズを見くらべる</span>
+        <h2>大きさと容量を、目で比べる</h2>
+        <p>数字だけだと「サイズ感」はつかみにくいもの。上から見たときの外寸を同じ縮尺でならべました。置きたい場所の寸法とくらべてみてください。</p>
+      </div>
+
+      <div class="viz-block reveal">
+        <h3>上から見た大きさ（外寸 幅 × 奥行）</h3>
+        <p class="note">四角の面積が、置いたときに占めるスペースの目安です。キッチンの分別ワゴンから卓上のホルダーまで、サイズの幅は約4倍あります。</p>
+        <span class="tap-note">イラストをタップすると商品ページへ移動します</span>
+        <div class="foot-scale" id="footScale"></div>
+        <div class="ruler"><span class="bar" style="width:60px"></span>= 10cm</div>
+      </div>
+
+      <div class="viz-block reveal">
+        <h3>容量のめやす</h3>
+        <p class="note">容量（L）が公表されている商品だけをグラフにしています。分別ダストワゴン・ポリ袋エコホルダー・ティッシュ＆ダストボックスは、規格のレジ袋・ポリ袋を使うタイプのため容量表記がありません。</p>
+        <span class="tap-note">バーをタップすると商品ページへ移動します</span>
+        <div class="cap-chart" id="capChart"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 商品詳細 -->
+  <section id="detail">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">1つずつチェック</span>
+        <h2>1つずつ、くわしく</h2>
+        <p>置き場所の近いものでグループ分けしています。それぞれ「容量・特徴・こんな人におすすめ・価格」の順です。</p>
+      </div>
+      <div id="detailGroups"></div>
+    </div>
+  </section>
+
+  <section id="table">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">ぜんぶの比較表</span>
+        <h2>スペック早見表</h2>
+        <p>共通点（白黒2色展開・towerの統一デザイン）は省き、選ぶときに効く違いだけを載せています。行をタップすると候補として色が付きます。</p>
+      </div>
+
+      <div class="sortbar reveal">
+        <span>並び替え</span>
+        <button data-sort="default" aria-pressed="true">掲載順</button>
+        <button data-sort="cap" aria-pressed="false">容量が小さい順</button>
+        <button data-sort="price" aria-pressed="false">価格が安い順</button>
+      </div>
+
+      <div class="table-scroll reveal">
+        <table class="compare">
+          <thead>
+            <tr>
+              <th>商品</th>
+              <th>置き場所</th>
+              <th>容量のめやす</th>
+              <th>外寸 W×D×H</th>
+              <th>重量</th>
+              <th>価格（税込）</th>
+              <th>ページ</th>
+            </tr>
+          </thead>
+          <tbody id="cmpBody"></tbody>
+        </table>
+      </div>
+      <p class="table-hint">寸法・重量・容量・価格は2026年9月時点の商品ページおよびメーカー公表値です。最新の価格・在庫は各商品ページでご確認ください。</p>
+    </div>
+  </section>
+
+  <!-- 別ページ整理 -->
+  <section id="combo">
+    <div class="wrap-narrow">
+      <div class="sec-head reveal">
+        <span class="eyebrow">買う前に、ちょこっと補足</span>
+        <h2>「似た名前の商品」が並んでいるので<br>ここだけ整理しました</h2>
+        <p>tower のゴミ箱は、個数違い・開き方違い・分別数違いで、似た名前の商品がいくつも並んでいます。買ったあとで「こっちの方がよかったかも」とならないよう、代表的な関係をまとめました。購入前に、よければ目を通してみてください。</p>
+      </div>
+
+      <div class="combo">
+        <div class="combo-card reveal">
+          <h3><span class="tag">スリム蓋付きゴミ箱</span>35L</h3>
+          <ul>
+            <li><a href="https://item.rakuten.co.jp/sommelier/ymj-00557/" target="_blank" rel="noopener">単品ページ</a>（ymj-00557）… 3,630円・縦開き</li>
+            <li><a href="https://item.rakuten.co.jp/sommelier/ymj-00558/" target="_blank" rel="noopener">2個組ページ</a>（ymj-00558）… 5,940円・1個あたり2,970円</li>
+            <li><a href="https://item.rakuten.co.jp/sommelier/ymj-01430/" target="_blank" rel="noopener">横開きタイプ</a>（ymj-01430）… 3,630円・横に開く仕様</li>
+            <li><a href="https://item.rakuten.co.jp/sommelier/ymj-01431/" target="_blank" rel="noopener">横開きタイプ 2個組</a>（ymj-01431）… 5,940円</li>
+          </ul>
+          <p class="verdict">縦開き／横開きは、置く場所の扉や壁のスペースに合わせて選ぶポイントです。<b>2個使うなら2個組ページの方が1個あたり660円お得</b>（2,970円 vs 3,630円）。</p>
+        </div>
+
+        <div class="combo-card reveal">
+          <h3><span class="tag">ポリ袋エコホルダー</span>キッチン卓上</h3>
+          <ul>
+            <li><a href="https://item.rakuten.co.jp/sommelier/ymj-00483/" target="_blank" rel="noopener">通常サイズ</a>（ymj-00483）… 1,100円</li>
+            <li><a href="https://item.rakuten.co.jp/sommelier/ymj-00105/" target="_blank" rel="noopener">Lサイズ</a>（ymj-00105）… 1,320円</li>
+            <li><a href="https://item.rakuten.co.jp/sommelier/ymj-00134/" target="_blank" rel="noopener">蓋付きタイプ</a>（ymj-00134）… 1,980円</li>
+            <li>大小2個セット（通常＋L）… 2,420円</li>
+          </ul>
+          <p class="verdict">大小2個セット2,420円は<b>通常1,100円＋L1,320円の合算と同額</b>。価格の得はなく「2サイズを1回でそろえられる」のがメリットです。生ゴミの臭いが気になるなら蓋付きタイプを。</p>
+        </div>
+
+        <div class="combo-card reveal">
+          <h3><span class="tag">分別ダストワゴン</span>分別数・蓋の有無で複数ページ</h3>
+          <ul>
+            <li><a href="https://item.rakuten.co.jp/sommelier/tower-042/" target="_blank" rel="noopener">2分別</a>（8,910円）／<a href="https://item.rakuten.co.jp/sommelier/tower-043/" target="_blank" rel="noopener">3分別</a>（9,790円）／<a href="https://item.rakuten.co.jp/sommelier/ymj-01793/" target="_blank" rel="noopener">4分別</a>（9,900円）… いずれも蓋なし</li>
+            <li><a href="https://item.rakuten.co.jp/sommelier/ymj-01251/" target="_blank" rel="noopener">蓋付きタイプ</a>（例：3分別 19,800円）… 分別数・サイズ違いで複数ページに分かれています</li>
+          </ul>
+          <p class="verdict">分別したい数（2／3／4）と<b>蓋の有無</b>を先に決めてから商品ページで最新の価格・サイズを確認するのがおすすめです。似た名前のページが多いので、型番（4桁の数字）で見分けると確実です。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- まとめ -->
+  <section id="summary">
+    <div class="wrap-narrow">
+      <div class="sec-head reveal">
+        <span class="eyebrow">こまったら、これ</span>
+        <h2>目的べつの結論</h2>
+      </div>
+      <div class="pick-list reveal">
+        <div class="pick-row">
+          <div class="p-need">キッチンでがっつり分別したい</div>
+          <div class="p-ans"><b>分別ダストワゴン 3分別（9,790円）</b>。食器棚下に収めたいなら<b>スリム蓋付きゴミ箱（3,630円・35L）</b>。</div>
+        </div>
+        <div class="pick-row">
+          <div class="p-need">コンロ・シンク周りに一つ置きたい</div>
+          <div class="p-ans"><b>ポリ袋エコホルダー（1,100円）</b>。扉に取り付けたいなら<b>マグネット＆シンク扉ゴミ箱（2,860円）</b>。</div>
+        </div>
+        <div class="pick-row">
+          <div class="p-need">生ゴミの臭いが気になる</div>
+          <div class="p-ans"><b>密閉ゴミ箱・フィルムフック（2,530円・1.8L）</b>。パッキンで臭い漏れを防ぎます。</div>
+        </div>
+        <div class="pick-row">
+          <div class="p-need">リビング・寝室をすっきりさせたい</div>
+          <div class="p-ans"><b>トラッシュカン（4,840円・9L）</b>。袋を掛けても外から見えません。</div>
+        </div>
+        <div class="pick-row">
+          <div class="p-need">ベッドサイドで使いたい</div>
+          <div class="p-ans"><b>ティッシュ＆ダストボックス（3,520円）</b>。ティッシュとゴミ箱がひとつにまとまります。</div>
+        </div>
+        <div class="pick-row">
+          <div class="p-need">トイレをコンパクトに</div>
+          <div class="p-ans"><b>トイレポット 奥行きスリム（2,200円・1.95L）</b>。手を触れず捨てたいなら<b>ペダル式トイレポット（3,080円）</b>。</div>
+        </div>
+        <div class="pick-row">
+          <div class="p-need">車の中でゴミをまとめたい</div>
+          <div class="p-ans"><b>車載用コンソールゴミ箱（4,950円・約6L）</b>。ドリンクや携帯電話の置き場にも。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap-narrow">
+    <p>掲載の価格・仕様・在庫は2026年9月時点で、楽天市場「家具のソムリエ」の各商品ページおよびメーカー（山崎実業 tower）公表値をもとにしています。実際の購入前に必ず各商品ページで最新情報をご確認ください。</p>
+    <p>商品説明の一部に山崎実業の公式表現を参照しています。画像は各商品ページのものです。</p>
+    <p>家具のソムリエ ／ 山崎実業 tower ゴミ箱 くらべて選ぶ特集</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  // ---------- データ ----------
+  var P = [
+    {
+      id:"tower-043", url:"https://item.rakuten.co.jp/sommelier/tower-043/",
+      img:"images/tower-043.jpg",
+      name:"目隠し分別ダストワゴン タワー 3分別", short:"分別ダストワゴン（3分別）",
+      group:"A", place:"キッチン", type:"キッチン・3分別ワゴン",
+      capText:"3分別（レジ袋使用）", capShort:"3分別", capMain:null, sortCap:9999,
+      size:"W51.5×D32×H55cm", w:51.5, d:32, h:55,
+      weight:"約5kg", material:"スチール（粉体塗装）",
+      priceText:"9,790円", priceValue:9790,
+      features:[
+        "レジ袋を目隠ししたまま3種類に分別できる",
+        "キャスター付きで足元の掃除もラクに移動",
+        "組立式（スパナ付属）でスチール製のしっかりした作り"
+      ],
+      uses:[
+        "燃えるゴミ・ペットボトル・缶など複数分別したい人",
+        "シンク下や勝手口の横に置くメインゴミ箱がほしい人",
+        "レジ袋が外から見えないようにしたい人"
+      ],
+      also:"分別数は2分別・4分別、さらに蓋付きタイプもあります。詳しくは下の「似た名前の商品」整理をご覧ください。"
+    },
+    {
+      id:"ymj-00557", url:"https://item.rakuten.co.jp/sommelier/ymj-00557/",
+      img:"images/ymj-00557.jpg",
+      name:"スリム蓋付きゴミ箱 タワー", short:"スリム蓋付きゴミ箱",
+      group:"A", place:"キッチン", type:"キッチン・食器棚下スリム",
+      capText:"35L", capShort:"35L", capMain:35, sortCap:35,
+      size:"W19×D40×H54cm", w:19, d:40, h:54,
+      weight:"1300g", material:"ポリプロピレン",
+      priceText:"3,630円", priceValue:3630,
+      features:[
+        "45L・30L・20Lのゴミ袋に対応",
+        "幅19cmのスリム設計で食器棚下やすき間に収まる",
+        "組立式（パーツはポリプロピレン）"
+      ],
+      uses:[
+        "食器棚下や勝手口などのすき間に置きたい人",
+        "キッチンのメインゴミ箱をコンパクトにしたい人"
+      ],
+      also:"2個組・横開きタイプ・横開き2個組のページがあります。詳しくは「似た名前の商品」整理をご覧ください。"
+    },
+    {
+      id:"ymj-00483", url:"https://item.rakuten.co.jp/sommelier/ymj-00483/",
+      img:"images/ymj-00483.jpg",
+      name:"ポリ袋エコホルダー タワー", short:"ポリ袋エコホルダー",
+      group:"A", place:"キッチン", type:"キッチン・卓上コンパクト",
+      capText:"ポリ袋を使用（三角コーナー代わり）", capShort:"ポリ袋使用", capMain:null, sortCap:9999,
+      size:"W12×D9.5×H16.5cm", w:12, d:9.5, h:16.5,
+      weight:"310g", material:"スチール",
+      priceText:"1,100円", priceValue:1100,
+      features:[
+        "三角コーナー代わりに使えるシンプルなポリ袋ホルダー",
+        "使わないときは折りたたんでコンパクトに収納",
+        "レビュー4.83（296件）の人気アイテム"
+      ],
+      uses:[
+        "シンク上や調理台に、生ゴミ用の簡易ゴミ箱がほしい人",
+        "コップ・水筒の水切りスタンドとしても使いたい人"
+      ],
+      also:"Lサイズ・蓋付き・大小2個セットのページがあります。詳しくは「似た名前の商品」整理をご覧ください。"
+    },
+    {
+      id:"ymj-00241", url:"https://item.rakuten.co.jp/sommelier/ymj-00241/",
+      img:"images/ymj-00241.jpg",
+      name:"マグネット＆シンク扉ゴミ箱 タワー", short:"マグネット＆シンク扉ゴミ箱",
+      group:"A", place:"キッチン", type:"キッチン・扉／マグネット取り付け",
+      capText:"1.8L", capShort:"1.8L", capMain:1.8, sortCap:1.8,
+      size:"W17×D9.5×H17cm", w:17, d:9.5, h:17,
+      weight:"480g", material:"ABS樹脂",
+      priceText:"2,860円", priceValue:2860,
+      features:[
+        "マグネットまたは扉フックで取り付け",
+        "蓋付きでゴミが見えずスッキリ",
+        "耐荷重約1.5kg、扉幅17cm以上・厚さ1.4〜2cmの扉に対応"
+      ],
+      uses:[
+        "調理中に出る野菜くずなどをその場でポイしたい人",
+        "シンク周りに新しい置き場所を増やしたくない人"
+      ],
+      also:"単品ページのみです。"
+    },
+    {
+      id:"ymj-01526", url:"https://item.rakuten.co.jp/sommelier/ymj-01526/",
+      img:"images/ymj-01526.jpg",
+      name:"フィルムフック 密閉ゴミ箱 タワー", short:"密閉ゴミ箱（フィルムフック）",
+      group:"A", place:"キッチン／トイレ", type:"キッチン・貼り付け密閉",
+      capText:"1.8L", capShort:"1.8L", capMain:1.8, sortCap:1.8,
+      size:"W17×D9.6×H17.2cm", w:17, d:9.6, h:17.2,
+      weight:"310g", material:"ABS樹脂",
+      priceText:"2,530円", priceValue:2530,
+      features:[
+        "フィルムフックでタイルや扉、冷蔵庫に貼り付け",
+        "パッキン付きで臭い漏れを防ぐ密閉構造",
+        "片手でサッと開けられる蓋"
+      ],
+      uses:[
+        "生ゴミの臭いが気になる人",
+        "マグネットが付かない場所（タイルなど）に取り付けたい人",
+        "洗面所やトイレタンクの脇に置きたい人"
+      ],
+      also:"単品ページのみです。"
+    },
+    {
+      id:"ymj-00279", url:"https://item.rakuten.co.jp/sommelier/ymj-00279/",
+      img:"images/ymj-00279.jpg",
+      name:"トラッシュカン タワー", short:"トラッシュカン",
+      group:"B", place:"リビング・寝室", type:"リビング・寝室・スクエア型",
+      capText:"9L", capShort:"9L", capMain:9, sortCap:9,
+      size:"W18×D18×H33cm", w:18, d:18, h:33,
+      weight:"1300g", material:"ABS樹脂",
+      priceText:"4,840円", priceValue:4840,
+      features:[
+        "袋を掛けても外から見えないデザイン",
+        "10L用ゴミ袋・30〜40号のレジ袋に対応",
+        "スクエアなフォルムでどんな部屋にもなじむ"
+      ],
+      uses:[
+        "リビングや寝室にすっきりしたゴミ箱を置きたい人",
+        "洗面所用のちょうどいいサイズを探している人"
+      ],
+      also:"丸型13L・角型14L・角型ロング・角型スリム10L・ワイド15Lなど、同じ「トラッシュカン」シリーズにサイズ違いが多数あります。"
+    },
+    {
+      id:"ymj-01404", url:"https://item.rakuten.co.jp/sommelier/ymj-01404/",
+      img:"images/ymj-01404.jpg",
+      name:"引っ掛けティッシュケース&ダストボックス タワー", short:"ティッシュ＆ダストボックス",
+      group:"B", place:"寝室（ベッドサイド）", type:"ベッドサイド一体型",
+      capText:"ティッシュ＋ゴミ箱一体（開口部W18.5×D5.9×H13.8cm）", capShort:"一体型", capMain:null, sortCap:9999,
+      size:"W44.6×D7.6×H14.3cm（フック含まず）", sizeShort:"W44.6×D7.6×H14.3cm", w:44.6, d:7.6, h:14.3,
+      weight:"720g", material:"ABS樹脂",
+      priceText:"3,520円", priceValue:3520,
+      features:[
+        "ティッシュボックス収納とゴミ箱が一体化",
+        "厚み2〜4.1cmのベッドフレーム・ヘッドボードに引っ掛け設置",
+        "ゴミ箱は取り外して丸洗い可能、置き型としても使用可"
+      ],
+      uses:[
+        "ベッドサイドにゴミ箱とティッシュをまとめたい人",
+        "リモコンやスマホの一時置き場もほしい人"
+      ],
+      also:"単品ページのみです。"
+    },
+    {
+      id:"ymj-01953", url:"https://item.rakuten.co.jp/sommelier/ymj-01953/",
+      img:"images/ymj-01953.jpg",
+      name:"トイレポット タワー 奥行きスリム", short:"トイレポット（奥行きスリム）",
+      group:"C", place:"トイレ", type:"トイレ・奥行きスリム",
+      capText:"1.95L", capShort:"1.95L", capMain:1.95, sortCap:1.95,
+      size:"W16.6×D8×H23.8cm", w:16.6, d:8, h:23.8,
+      weight:"450g", material:"ABS樹脂／ポリプロピレン（インナーボックス）",
+      priceText:"2,200円", priceValue:2200,
+      features:[
+        "高さ23.8cmで捨てやすく、奥行8cmのスリム設計",
+        "インナーボックスにゴミ袋をセットして本体を被せるだけ",
+        "蓋は片手でラクに開閉"
+      ],
+      uses:[
+        "トイレの限られたスペースに置きたい人",
+        "掃除のしやすさ・パーツの丸洗いを重視する人"
+      ],
+      also:"同じ「トイレポット」シリーズにラウンド型（ymj-01954）もあります。この特集のFV写真は本品（実際に置いた例）です。"
+    },
+    {
+      id:"ymj-00144", url:"https://item.rakuten.co.jp/sommelier/ymj-00144/",
+      img:"images/ymj-00144.jpg",
+      name:"ペダル式トイレポット タワー", short:"ペダル式トイレポット",
+      group:"C", place:"トイレ", type:"トイレ・ペダル開閉",
+      capText:"約3.9L", capShort:"約3.9L", capMain:3.9, sortCap:3.9,
+      size:"W12×D19×H27.5cm", w:12, d:19, h:27.5,
+      weight:"750g", material:"ABS樹脂",
+      priceText:"3,080円", priceValue:3080,
+      features:[
+        "ペダルを踏むだけで蓋が開く",
+        "開口部は約70度開いて捨てやすい",
+        "背面に持ち手付きで、掃除のときの移動もラク"
+      ],
+      uses:[
+        "手を触れずに捨てたい人",
+        "来客が多く、衛生面を気にする人"
+      ],
+      also:"単品ページのみです。"
+    },
+    {
+      id:"ymj-00957", url:"https://item.rakuten.co.jp/sommelier/ymj-00957/",
+      img:"images/ymj-00957.jpg",
+      name:"車載用コンソールゴミ箱 タワー", short:"車載用コンソールゴミ箱",
+      group:"D", place:"車内", type:"車内・スライド蓋",
+      capText:"約6L", capShort:"約6L", capMain:6, sortCap:6,
+      size:"W38×D16.8×H25.5cm（蓋スライド開口時 幅約52cm）", sizeShort:"W38×D16.8×H25.5cm", w:38, d:16.8, h:25.5,
+      weight:"1450g", material:"ABS樹脂",
+      priceText:"4,950円", priceValue:4950,
+      features:[
+        "蓋はスライド式で、ドリンクや携帯電話を置ける凹み付き",
+        "フロア固定パーツ付きで安定感も抜群",
+        "蓋が外れるので丸洗いできて衛生的"
+      ],
+      uses:[
+        "ファミリーカーの座席間に置きたい人",
+        "ドライブ中のゴミやドリンクをまとめたい人（リビングでも使用可）"
+      ],
+      also:"単品ページのみです。"
+    }
+  ];
+
+  var GROUPS = [
+    {key:"A", no:"01", title:"キッチンで使う"},
+    {key:"B", no:"02", title:"リビング・寝室で使う"},
+    {key:"C", no:"03", title:"トイレで使う"},
+    {key:"D", no:"04", title:"車で使う"}
+  ];
+
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+  function el(tag,cls,html){var e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.innerHTML=html;return e;}
+
+  // ---------- 比較表 ----------
+  var body = document.getElementById("cmpBody");
+  function buildRows(list){
+    body.innerHTML="";
+    list.forEach(function(p){
+      var tr=el("tr");
+      tr.setAttribute("data-cap",p.sortCap);
+      tr.setAttribute("data-price",p.priceValue);
+      tr.innerHTML =
+        '<th scope="row">'+esc(p.short)+'<span class="t-code">'+esc(p.id)+'</span></th>'+
+        '<td>'+esc(p.place)+'</td>'+
+        '<td class="t-num">'+esc(p.capShort)+'</td>'+
+        '<td class="t-num">'+esc(p.sizeShort || p.size)+'</td>'+
+        '<td>'+esc(p.weight)+'</td>'+
+        '<td class="t-price">'+esc(p.priceText)+'</td>'+
+        '<td><a class="t-link" href="'+p.url+'" target="_blank" rel="noopener">見る</a></td>';
+      tr.addEventListener("click",function(e){
+        if(e.target.closest("a"))return;
+        tr.classList.toggle("pick");
+      });
+      body.appendChild(tr);
+    });
+  }
+  buildRows(P);
+
+  var sortBtns = Array.prototype.slice.call(document.querySelectorAll(".sortbar button"));
+  sortBtns.forEach(function(b){
+    b.addEventListener("click",function(){
+      sortBtns.forEach(function(x){x.setAttribute("aria-pressed", x===b ? "true":"false");});
+      var mode=b.getAttribute("data-sort");
+      var list=P.slice();
+      if(mode==="cap") list.sort(function(a,c){return a.sortCap-c.sortCap;});
+      else if(mode==="price") list.sort(function(a,c){return a.priceValue-c.priceValue;});
+      buildRows(list);
+    });
+  });
+
+  // ---------- 診断アコーディオン ----------
+  document.querySelectorAll(".q-head").forEach(function(btn){
+    btn.addEventListener("click",function(){
+      var item=btn.closest(".q-item");
+      var open=item.classList.toggle("open");
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  });
+
+  // ---------- 実寸：平面（商品ページへリンク） ----------
+  var PX = 6; // 1cm
+  var foot = document.getElementById("footScale");
+  P.slice().sort(function(a,b){return (a.w*a.d)-(b.w*b.d);}).forEach(function(p){
+    var item=el("a","foot-item");
+    item.href=p.url; item.target="_blank"; item.rel="noopener";
+    item.setAttribute("aria-label", p.short+" の商品ページへ");
+    var box=el("div","foot-box");
+    box.style.width=(p.w*PX)+"px";
+    box.style.height=(p.d*PX)+"px";
+    item.appendChild(box);
+    item.appendChild(el("div","fi-name",esc(p.short)));
+    item.appendChild(el("div","fi-dim","W"+p.w+" × D"+p.d+" cm"));
+    foot.appendChild(item);
+  });
+
+  // ---------- 実寸：容量（商品ページへリンク・公表値のある商品のみ） ----------
+  var CAP_MAX = 40;
+  var chart = document.getElementById("capChart");
+  P.filter(function(p){return p.capMain!=null;}).slice().sort(function(a,b){return a.capMain-b.capMain;}).forEach(function(p){
+    var row=el("a","cap-row");
+    row.href=p.url; row.target="_blank"; row.rel="noopener";
+    row.setAttribute("aria-label", p.short+" の商品ページへ");
+    row.appendChild(el("div","cr-name",esc(p.short)));
+    var track=el("div","cap-track");
+    var mainW = Math.max(6, (p.capMain/CAP_MAX)*100);
+    var fill=el("div","cap-fill");
+    fill.style.width=mainW+"%";
+    fill.innerHTML='<span>'+p.capMain+'L</span>';
+    track.appendChild(fill);
+    row.appendChild(track);
+    chart.appendChild(row);
+  });
+
+  // ---------- 商品詳細 ----------
+  var host = document.getElementById("detailGroups");
+  GROUPS.forEach(function(g){
+    var wrap=el("div","group");
+    wrap.innerHTML='<div class="group-title"><span class="g-no en">'+g.no+'</span><h3>'+esc(g.title)+'</h3></div>';
+    P.filter(function(p){return p.group===g.key;}).forEach(function(p){
+      var item=el("div","item");
+      var feats=p.features.map(function(f){return "<li>"+esc(f)+"</li>";}).join("");
+      var uses=p.uses.map(function(u){return "<li>"+esc(u)+"</li>";}).join("");
+      item.innerHTML=
+        '<div class="item-media">'+
+          '<a class="frame" href="'+p.url+'" target="_blank" rel="noopener"><img loading="lazy" src="'+p.img+'" alt="山崎実業 tower '+esc(p.short)+'"></a>'+
+          '<div class="cap">'+esc(p.id)+'</div>'+
+        '</div>'+
+        '<div class="item-body">'+
+          '<h4>'+esc(p.name)+'</h4>'+
+          '<div class="sub">'+esc(p.type)+'</div>'+
+          '<div class="spec-strip">'+
+            '<div><dt>容量</dt><dd class="big">'+esc(p.capText)+'</dd></div>'+
+            '<div><dt>外寸</dt><dd>'+esc(p.sizeShort || p.size)+'</dd></div>'+
+            '<div><dt>重量</dt><dd>'+esc(p.weight)+'</dd></div>'+
+            '<div><dt>素材</dt><dd>'+esc(p.material)+'</dd></div>'+
+          '</div>'+
+          '<div class="blk"><div class="bh">特徴</div><ul>'+feats+'</ul></div>'+
+          '<div class="blk"><div class="bh">こんな人・使い方に</div><ul>'+uses+'</ul></div>'+
+          '<div class="also"><b>買い方メモ：</b>'+esc(p.also)+'</div>'+
+          '<a class="buy" href="'+p.url+'" target="_blank" rel="noopener">商品ページへ <span class="price">'+esc(p.priceText)+'</span></a>'+
+        '</div>';
+      wrap.appendChild(item);
+    });
+    host.appendChild(wrap);
+  });
+
+  // ---------- reveal ----------
+  var io;
+  if("IntersectionObserver" in window){
+    io=new IntersectionObserver(function(ents){
+      ents.forEach(function(en){
+        if(en.isIntersecting){en.target.classList.add("in");io.unobserve(en.target);}
+      });
+    },{rootMargin:"0px 0px -8% 0px"});
+    document.querySelectorAll(".reveal").forEach(function(n){io.observe(n);});
+  }else{
+    document.querySelectorAll(".reveal").forEach(function(n){n.classList.add("in");});
+  }
+})();
+</script>
+
+</body>
+</html>
