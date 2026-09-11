@@ -226,6 +226,20 @@
   .also{background:var(--paper-2);border-left:4px solid var(--red);padding:.85em 1.1em;font-size:.9rem;margin-bottom:1.2em}
   .also b{font-weight:700}
 
+  .related{margin-bottom:1.3em}
+  .related .rel-h{font-size:.7rem;letter-spacing:.1em;color:var(--sub);font-weight:700;margin-bottom:.6em}
+  .rel-list{display:flex;flex-wrap:wrap;gap:.7em}
+  .rel-item{width:72px;text-decoration:none;color:inherit}
+  .rel-item .rel-frame{
+    width:72px;height:72px;background:var(--paper-2);border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;padding:4px;margin-bottom:.4em;
+    transition:border-color .15s;
+  }
+  .rel-item:hover .rel-frame{border-color:var(--ink)}
+  .rel-frame img{width:100%;height:100%;object-fit:contain}
+  .rel-item .rel-label{font-size:.67rem;line-height:1.35;color:var(--ink);font-weight:500}
+  .rel-item:hover .rel-label{color:var(--red-deep);text-decoration:underline}
+
   .buy{display:inline-flex;align-items:center;gap:.7em;font-weight:700;font-size:1rem;background:var(--ink);color:#fff;padding:.75em 1.7em;text-decoration:none;transition:background .2s}
   .buy:hover{background:var(--red)}
   .buy .price{font-family:"Jost","Noto Sans JP",sans-serif;font-weight:700}
@@ -737,7 +751,12 @@
         "シンク下や勝手口の横に置くメインゴミ箱がほしい人",
         "レジ袋が外から見えないようにしたい人"
       ],
-      also:"分別数は2分別・4分別、さらに蓋付きタイプもあります。詳しくは下の「似た名前の商品」整理をご覧ください。"
+      also:"分別数は2分別・4分別、さらに蓋付きタイプもあります。詳しくは下の「似た名前の商品」整理をご覧ください。",
+      related:[
+        {id:"tower-042", label:"2分別", url:"https://item.rakuten.co.jp/sommelier/tower-042/", img:"images/rel-tower-042.jpg"},
+        {id:"ymj-01793", label:"4分別", url:"https://item.rakuten.co.jp/sommelier/ymj-01793/", img:"images/rel-ymj-01793.jpg"},
+        {id:"ymj-00884", label:"蓋付き3分別", url:"https://item.rakuten.co.jp/sommelier/ymj-00884/", img:"images/rel-ymj-00884.jpg"}
+      ]
     },
     {
       id:"ymj-01802", url:"https://item.rakuten.co.jp/sommelier/ymj-01802/",
@@ -757,7 +776,11 @@
         "分別はせず、45Lゴミ袋をそのまま1つ大きく使いたい人",
         "3分別ワゴンより幅を取らずキッチン横に置きたい人"
       ],
-      also:"分別せずに45Lをまるごと使うタイプです。蓋付き（ymj-01801・14,300円）もあります。詳しくは下の「似た名前の商品」整理をご覧ください。"
+      also:"分別せずに45Lをまるごと使うタイプです。蓋付き（ymj-01801・14,300円）もあります。詳しくは下の「似た名前の商品」整理をご覧ください。",
+      related:[
+        {id:"ymj-01801", label:"蓋付き45L", url:"https://item.rakuten.co.jp/sommelier/ymj-01801/", img:"images/rel-ymj-01801.jpg"},
+        {id:"tower-043", label:"3分別ワゴン", url:"https://item.rakuten.co.jp/sommelier/tower-043/", img:"images/tower-043.jpg"}
+      ]
     },
     {
       id:"ymj-00557", url:"https://item.rakuten.co.jp/sommelier/ymj-00557/",
@@ -777,7 +800,11 @@
         "食器棚下や勝手口などのすき間に置きたい人",
         "キッチンのメインゴミ箱をコンパクトにしたい人"
       ],
-      also:"2個組・横開きタイプ・横開き2個組のページがあります。詳しくは「似た名前の商品」整理をご覧ください。"
+      also:"2個組・横開きタイプ・横開き2個組のページがあります。詳しくは「似た名前の商品」整理をご覧ください。",
+      related:[
+        {id:"ymj-00558", label:"2個組", url:"https://item.rakuten.co.jp/sommelier/ymj-00558/", img:"images/rel-ymj-00558.jpg"},
+        {id:"ymj-01430", label:"横開きタイプ", url:"https://item.rakuten.co.jp/sommelier/ymj-01430/", img:"images/rel-ymj-01430.jpg"}
+      ]
     },
     {
       id:"ymj-00483", url:"https://item.rakuten.co.jp/sommelier/ymj-00483/",
@@ -797,7 +824,11 @@
         "シンク上や調理台に、生ゴミ用の簡易ゴミ箱がほしい人",
         "コップ・水筒の水切りスタンドとしても使いたい人"
       ],
-      also:"Lサイズ・蓋付き・大小2個セットのページがあります。詳しくは「似た名前の商品」整理をご覧ください。"
+      also:"Lサイズ・蓋付き・大小2個セットのページがあります。詳しくは「似た名前の商品」整理をご覧ください。",
+      related:[
+        {id:"ymj-00105", label:"Lサイズ", url:"https://item.rakuten.co.jp/sommelier/ymj-00105/", img:"images/rel-ymj-00105.jpg"},
+        {id:"ymj-00134", label:"蓋付き", url:"https://item.rakuten.co.jp/sommelier/ymj-00134/", img:"images/rel-ymj-00134.jpg"}
+      ]
     },
     {
       id:"ymj-00241", url:"https://item.rakuten.co.jp/sommelier/ymj-00241/",
@@ -817,7 +848,10 @@
         "調理中に出る野菜くずなどをその場でポイしたい人",
         "シンク周りに新しい置き場所を増やしたくない人"
       ],
-      also:"単品ページのみです。"
+      also:"貼り付けで臭い漏れも防ぎたいなら、フィルムフックタイプもあります。",
+      related:[
+        {id:"ymj-01526", label:"フィルムフック版", url:"https://item.rakuten.co.jp/sommelier/ymj-01526/", img:"images/ymj-01526.jpg"}
+      ]
     },
     {
       id:"ymj-01526", url:"https://item.rakuten.co.jp/sommelier/ymj-01526/",
@@ -838,7 +872,10 @@
         "マグネットが付かない場所（タイルなど）に取り付けたい人",
         "洗面所やトイレタンクの脇に置きたい人"
       ],
-      also:"単品ページのみです。"
+      also:"マグネットで取り付けたいなら、マグネット＆シンク扉ゴミ箱もあります。",
+      related:[
+        {id:"ymj-00241", label:"マグネット版", url:"https://item.rakuten.co.jp/sommelier/ymj-00241/", img:"images/ymj-00241.jpg"}
+      ]
     },
     {
       id:"ymj-00279", url:"https://item.rakuten.co.jp/sommelier/ymj-00279/",
@@ -858,7 +895,12 @@
         "リビングや寝室にすっきりしたゴミ箱を置きたい人",
         "洗面所用のちょうどいいサイズを探している人"
       ],
-      also:"丸型13L・角型14L・角型ロング・角型スリム10L・ワイド15Lなど、同じ「トラッシュカン」シリーズにサイズ違いが多数あります。"
+      also:"丸型13L・角型14L・角型ロング・角型スリム10L・ワイド15Lなど、同じ「トラッシュカン」シリーズにサイズ違いが多数あります。",
+      related:[
+        {id:"ymj-01782", label:"角型14L", url:"https://item.rakuten.co.jp/sommelier/ymj-01782/", img:"images/rel-ymj-01782.jpg"},
+        {id:"ymj-00280", label:"ワイド15L", url:"https://item.rakuten.co.jp/sommelier/ymj-00280/", img:"images/rel-ymj-00280.jpg"},
+        {id:"ymj-01925", label:"丸型13L", url:"https://item.rakuten.co.jp/sommelier/ymj-01925/", img:"images/rel-ymj-01925.jpg"}
+      ]
     },
     {
       id:"ymj-01404", url:"https://item.rakuten.co.jp/sommelier/ymj-01404/",
@@ -898,7 +940,10 @@
         "トイレの限られたスペースに置きたい人",
         "掃除のしやすさ・パーツの丸洗いを重視する人"
       ],
-      also:"同じ「トイレポット」シリーズにラウンド型（ymj-01954）もあります。"
+      also:"同じ「トイレポット」シリーズにラウンド型（ymj-01954）もあります。",
+      related:[
+        {id:"ymj-01954", label:"ラウンド型", url:"https://item.rakuten.co.jp/sommelier/ymj-01954/", img:"images/rel-ymj-01954.jpg"}
+      ]
     },
     {
       id:"ymj-00144", url:"https://item.rakuten.co.jp/sommelier/ymj-00144/",
@@ -918,7 +963,10 @@
         "手を触れずに捨てたい人",
         "来客が多く、衛生面を気にする人"
       ],
-      also:"単品ページのみです。"
+      also:"壁掛け収納も兼ねたいなら、ウォールトイレポット＆収納ケースもあります。",
+      related:[
+        {id:"ymj-00335", label:"壁掛け収納タイプ", url:"https://item.rakuten.co.jp/sommelier/ymj-00335/", img:"images/rel-ymj-00335.jpg"}
+      ]
     },
     {
       id:"ymj-00957", url:"https://item.rakuten.co.jp/sommelier/ymj-00957/",
@@ -938,7 +986,10 @@
         "ファミリーカーの座席間に置きたい人",
         "ドライブ中のゴミやドリンクをまとめたい人（リビングでも使用可）"
       ],
-      also:"単品ページのみです。"
+      also:"もっと小さく、ドリンクホルダーに立てたいならボトル型蓋付きゴミ箱もあります。",
+      related:[
+        {id:"ymj-01366", label:"ボトル型（車用）", url:"https://item.rakuten.co.jp/sommelier/ymj-01366/", img:"images/rel-ymj-01366.jpg"}
+      ]
     }
   ];
 
@@ -1041,6 +1092,16 @@
       var item=el("div","item");
       var feats=p.features.map(function(f){return "<li>"+esc(f)+"</li>";}).join("");
       var uses=p.uses.map(function(u){return "<li>"+esc(u)+"</li>";}).join("");
+      var relatedHtml="";
+      if(p.related && p.related.length){
+        var relItems=p.related.map(function(r){
+          return '<a class="rel-item" href="'+r.url+'" target="_blank" rel="noopener">'+
+            '<span class="rel-frame"><img loading="lazy" src="'+r.img+'" alt="山崎実業 tower '+esc(r.label)+'"></span>'+
+            '<span class="rel-label">'+esc(r.label)+'</span>'+
+          '</a>';
+        }).join("");
+        relatedHtml = '<div class="related"><div class="rel-h">類似品</div><div class="rel-list">'+relItems+'</div></div>';
+      }
       item.innerHTML=
         '<div class="item-media">'+
           '<a class="frame" href="'+p.url+'" target="_blank" rel="noopener"><img loading="lazy" src="'+p.img+'" alt="山崎実業 tower '+esc(p.short)+'"></a>'+
@@ -1058,6 +1119,7 @@
           '<div class="blk"><div class="bh">特徴</div><ul>'+feats+'</ul></div>'+
           '<div class="blk"><div class="bh">こんな人・使い方に</div><ul>'+uses+'</ul></div>'+
           '<div class="also"><b>買い方メモ：</b>'+esc(p.also)+'</div>'+
+          relatedHtml+
           '<a class="buy" href="'+p.url+'" target="_blank" rel="noopener">商品ページへ <span class="price">'+esc(p.priceText)+'</span></a>'+
         '</div>';
       wrap.appendChild(item);
