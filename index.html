@@ -78,20 +78,24 @@
   }
   .fv-meta span:first-child{border-left:1px solid var(--ink)}
 
-  .popular{margin-top:1.8em;max-width:600px}
-  .popular-label{display:inline-flex;align-items:center;gap:.5em;font-size:.72rem;font-weight:700;color:var(--sub);letter-spacing:.08em;margin-bottom:.6em}
+  .popular{margin-top:1.8em}
+  .popular-label{display:inline-flex;align-items:center;gap:.5em;font-size:.78rem;font-weight:700;color:var(--sub);letter-spacing:.08em;margin-bottom:.8em}
   .popular-label::before{content:"";width:.5em;height:.5em;background:var(--red)}
-  .popular-track{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
-  .popular-move{display:flex;gap:12px;width:max-content;animation:popular-scroll 26s linear infinite}
+  .popular-track{
+    width:100vw;margin-left:calc(50% - 50vw);overflow:hidden;
+    -webkit-mask-image:linear-gradient(90deg,transparent,#000 32px,#000 calc(100% - 32px),transparent);
+    mask-image:linear-gradient(90deg,transparent,#000 32px,#000 calc(100% - 32px),transparent);
+  }
+  .popular-move{display:flex;gap:20px;width:max-content;padding:0 24px;animation:popular-scroll 42s linear infinite}
   .popular-track:hover .popular-move{animation-play-state:paused}
   @keyframes popular-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
   @media (prefers-reduced-motion:reduce){.popular-move{animation:none}}
-  .pop-item{flex:none;width:64px;text-decoration:none;color:inherit;text-align:center}
-  .pop-frame{width:64px;height:64px;margin:0 auto .35em;background:var(--paper-2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;padding:3px;transition:border-color .15s}
+  .pop-item{flex:none;width:116px;text-decoration:none;color:inherit;text-align:center}
+  .pop-frame{width:116px;height:116px;margin:0 auto .5em;background:var(--paper-2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;padding:6px;transition:border-color .15s}
   .pop-item:hover .pop-frame{border-color:var(--ink)}
   .pop-frame img{width:100%;height:100%;object-fit:contain}
-  .pop-name{display:block;font-size:.62rem;line-height:1.3;color:var(--ink)}
-  .pop-reviews{display:block;font-size:.6rem;color:var(--red-deep);font-weight:700;margin-top:.15em;font-family:"Jost","Noto Sans JP",sans-serif}
+  .pop-name{display:block;font-size:.8rem;line-height:1.35;color:var(--ink)}
+  .pop-reviews{display:block;font-size:.72rem;color:var(--red-deep);font-weight:700;margin-top:.2em;font-family:"Jost","Noto Sans JP",sans-serif}
 
   .fv-scrollhint{display:inline-flex;align-items:center;gap:.5em;margin-top:1.8em;font-size:.82rem;font-weight:700;color:var(--ink)}
   .fv-scrollhint::after{
@@ -685,40 +689,40 @@
     <div class="wrap-narrow">
       <div class="sec-head reveal">
         <span class="eyebrow">こまったら、これ</span>
-        <h2>目的べつの結論</h2>
+        <h2>目的別のおすすめ</h2>
       </div>
       <div class="pick-list reveal">
         <div class="pick-row">
           <div class="p-need">キッチンでがっつり分別したい</div>
-          <div class="p-ans"><b>分別ダストワゴン 3分別（9,790円）</b>。食器棚下に収めたいなら<b>スリム蓋付きゴミ箱（3,630円・35L）</b>。</div>
+          <div class="p-ans"><a class="inline-link" href="https://item.rakuten.co.jp/sommelier/tower-043/" target="_blank" rel="noopener"><b>分別ダストワゴン 3分別（9,790円）</b></a>。食器棚下に収めたいなら<a class="inline-link" href="https://item.rakuten.co.jp/sommelier/ymj-00557/" target="_blank" rel="noopener"><b>スリム蓋付きゴミ箱（3,630円・35L）</b></a>。</div>
         </div>
         <div class="pick-row">
           <div class="p-need">45Lゴミ袋をまるごと使いたい</div>
-          <div class="p-ans"><b>スリム目隠しダストワゴン 45L（12,650円）</b>。分別はせず、幅27.8cmのスリムな1袋タイプ。</div>
+          <div class="p-ans"><a class="inline-link" href="https://item.rakuten.co.jp/sommelier/ymj-01802/" target="_blank" rel="noopener"><b>スリム目隠しダストワゴン 45L（12,650円）</b></a>。分別はせず、幅27.8cmのスリムな1袋タイプ。</div>
         </div>
         <div class="pick-row">
           <div class="p-need">コンロ・シンク周りに一つ置きたい</div>
-          <div class="p-ans"><b>ポリ袋エコホルダー（1,100円）</b>。扉に取り付けたいなら<b>マグネット＆シンク扉ゴミ箱（2,860円）</b>。</div>
+          <div class="p-ans"><a class="inline-link" href="https://item.rakuten.co.jp/sommelier/ymj-00483/" target="_blank" rel="noopener"><b>ポリ袋エコホルダー（1,100円）</b></a>。扉に取り付けたいなら<a class="inline-link" href="https://item.rakuten.co.jp/sommelier/ymj-00241/" target="_blank" rel="noopener"><b>マグネット＆シンク扉ゴミ箱（2,860円）</b></a>。</div>
         </div>
         <div class="pick-row">
           <div class="p-need">生ゴミの臭いが気になる</div>
-          <div class="p-ans"><b>密閉ゴミ箱・フィルムフック（2,530円・1.8L）</b>。パッキンで臭い漏れを防ぎます。</div>
+          <div class="p-ans"><a class="inline-link" href="https://item.rakuten.co.jp/sommelier/ymj-01526/" target="_blank" rel="noopener"><b>密閉ゴミ箱・フィルムフック（2,530円・1.8L）</b></a>。パッキンで臭い漏れを防ぎます。</div>
         </div>
         <div class="pick-row">
           <div class="p-need">リビング・寝室をすっきりさせたい</div>
-          <div class="p-ans"><b>トラッシュカン（4,840円・9L）</b>。袋を掛けても外から見えません。</div>
+          <div class="p-ans"><a class="inline-link" href="https://item.rakuten.co.jp/sommelier/ymj-00279/" target="_blank" rel="noopener"><b>トラッシュカン（4,840円・9L）</b></a>。袋を掛けても外から見えません。</div>
         </div>
         <div class="pick-row">
           <div class="p-need">ベッドサイドで使いたい</div>
-          <div class="p-ans"><b>ティッシュ＆ダストボックス（3,520円）</b>。ティッシュとゴミ箱がひとつにまとまります。</div>
+          <div class="p-ans"><a class="inline-link" href="https://item.rakuten.co.jp/sommelier/ymj-01404/" target="_blank" rel="noopener"><b>ティッシュ＆ダストボックス（3,520円）</b></a>。ティッシュとゴミ箱がひとつにまとまります。</div>
         </div>
         <div class="pick-row">
           <div class="p-need">トイレをコンパクトに</div>
-          <div class="p-ans"><b>トイレポット 奥行きスリム（2,200円・1.95L）</b>。手を触れず捨てたいなら<b>ペダル式トイレポット（3,080円）</b>。</div>
+          <div class="p-ans"><a class="inline-link" href="https://item.rakuten.co.jp/sommelier/ymj-01953/" target="_blank" rel="noopener"><b>トイレポット 奥行きスリム（2,200円・1.95L）</b></a>。手を触れず捨てたいなら<a class="inline-link" href="https://item.rakuten.co.jp/sommelier/ymj-00144/" target="_blank" rel="noopener"><b>ペダル式トイレポット（3,080円）</b></a>。</div>
         </div>
         <div class="pick-row">
           <div class="p-need">車の中でゴミをまとめたい</div>
-          <div class="p-ans"><b>車載用コンソールゴミ箱（4,950円・約6L）</b>。ドリンクや携帯電話の置き場にも。</div>
+          <div class="p-ans"><a class="inline-link" href="https://item.rakuten.co.jp/sommelier/ymj-00957/" target="_blank" rel="noopener"><b>車載用コンソールゴミ箱（4,950円・約6L）</b></a>。ドリンクや携帯電話の置き場にも。</div>
         </div>
       </div>
     </div>
