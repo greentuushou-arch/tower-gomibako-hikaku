@@ -79,10 +79,10 @@
   .fv-meta span:first-child{border-left:1px solid var(--ink)}
 
   .popular{margin-top:1.8em}
-  .popular-label{display:inline-flex;align-items:center;gap:.5em;font-size:.78rem;font-weight:700;color:var(--sub);letter-spacing:.08em;margin-bottom:.8em}
+  .popular-label{display:inline-flex;align-items:center;gap:.5em;font-size:.78rem;font-weight:700;color:var(--sub);letter-spacing:.08em}
   .popular-label::before{content:"";width:.5em;height:.5em;background:var(--red)}
   .popular-track{
-    width:100vw;margin-left:calc(50% - 50vw);overflow:hidden;
+    width:100%;margin-top:.8em;overflow:hidden;
     -webkit-mask-image:linear-gradient(90deg,transparent,#000 32px,#000 calc(100% - 32px),transparent);
     mask-image:linear-gradient(90deg,transparent,#000 32px,#000 calc(100% - 32px),transparent);
   }
@@ -356,8 +356,10 @@
 
     <div class="popular">
       <span class="popular-label">口コミの多い人気アイテム</span>
-      <div class="popular-track">
-        <div class="popular-move">
+    </div>
+  </div>
+  <div class="popular-track">
+      <div class="popular-move">
           <a class="pop-item" href="https://item.rakuten.co.jp/sommelier/ymj-00483/" target="_blank" rel="noopener">
             <span class="pop-frame"><img loading="lazy" src="images/ymj-00483.jpg" alt="ポリ袋エコホルダー"></span>
             <span class="pop-name">ポリ袋エコホルダー</span><span class="pop-reviews">296件</span>
@@ -439,10 +441,9 @@
             <span class="pop-frame"><img loading="lazy" src="images/ymj-00557.jpg" alt=""></span>
             <span class="pop-name">スリム蓋付きゴミ箱</span><span class="pop-reviews">11件</span>
           </a>
-        </div>
       </div>
-    </div>
-
+  </div>
+  <div class="fv-inner">
     <div class="fv-scrollhint">くらべてみる</div>
   </div>
   <figure class="fv-photo">
