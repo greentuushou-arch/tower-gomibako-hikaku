@@ -97,14 +97,6 @@
   .pop-name{display:block;font-size:.8rem;line-height:1.35;color:var(--ink)}
   .pop-reviews{display:block;font-size:.72rem;color:var(--red-deep);font-weight:700;margin-top:.2em;font-family:"Jost","Noto Sans JP",sans-serif}
 
-  .fv-scrollhint{display:inline-flex;align-items:center;gap:.5em;margin-top:1.8em;font-size:.82rem;font-weight:700;color:var(--ink)}
-  .fv-scrollhint::after{
-    content:"";width:8px;height:8px;border-right:2px solid var(--red);border-bottom:2px solid var(--red);
-    transform:rotate(45deg);animation:bob 1.4s ease-in-out infinite;
-  }
-  @keyframes bob{0%,100%{transform:rotate(45deg) translate(0,0)}50%{transform:rotate(45deg) translate(3px,3px)}}
-  @media (prefers-reduced-motion:reduce){.fv-scrollhint::after{animation:none}}
-
   .fv-photo{width:100%;margin-top:clamp(28px,5vw,52px);background:var(--paper-2)}
   .fv-photo img{width:100%;height:auto;display:block;max-height:60vh;object-fit:cover}
   .fv-photo figcaption{
@@ -442,9 +434,6 @@
             <span class="pop-name">スリム蓋付きゴミ箱</span><span class="pop-reviews">11件</span>
           </a>
       </div>
-  </div>
-  <div class="fv-inner">
-    <div class="fv-scrollhint">くらべてみる</div>
   </div>
   <figure class="fv-photo">
     <img src="images/fv-gomibako.jpg" alt="tower ゴミ箱をキッチンで使う例" width="1500" height="907">
