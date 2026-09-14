@@ -207,7 +207,9 @@
   .table-hint{margin-top:.9em;font-size:.8rem;color:var(--sub)}
 
   /* ---------- 商品詳細 ---------- */
-  .group{margin-top:clamp(38px,6vw,64px)}
+  .group{padding:clamp(38px,6vw,64px) 0;transition:background-color .2s}
+  .group:nth-child(even){background:var(--paper-2)}
+  .group + .group{border-top:1px solid var(--line)}
   .group-title{display:flex;align-items:center;gap:.8em;margin-bottom:1.5em}
   .group-title .g-no{font-family:"Jost",sans-serif;color:#fff;background:var(--red);font-size:.9rem;padding:.2em .65em;letter-spacing:.02em;font-weight:600}
   .group-title h3{font-weight:900;font-size:clamp(1.2rem,2.6vw,1.6rem)}
@@ -564,8 +566,8 @@
         <h2>1つずつ、くわしく</h2>
         <p>置き場所の近いものでグループ分けしています。それぞれ「容量・特徴・こんな人におすすめ・価格」の順です。</p>
       </div>
-      <div id="detailGroups"></div>
     </div>
+    <div id="detailGroups"></div>
   </section>
 
   <!-- 実寸ビジュアル -->
@@ -1187,7 +1189,8 @@
   var host = document.getElementById("detailGroups");
   GROUPS.forEach(function(g){
     var wrap=el("div","group");
-    wrap.innerHTML='<div class="group-title"><span class="g-no en">'+g.no+'</span><h3>'+esc(g.title)+'</h3></div>';
+    var inner=el("div","wrap");
+    inner.innerHTML='<div class="group-title"><span class="g-no en">'+g.no+'</span><h3>'+esc(g.title)+'</h3></div>';
     P.filter(function(p){return p.group===g.key;}).forEach(function(p){
       var item=el("div","item");
       var feats=p.features.map(function(f){return "<li>"+esc(f)+"</li>";}).join("");
@@ -1222,8 +1225,9 @@
           relatedHtml+
           '<a class="buy" href="'+p.url+'" target="_blank" rel="noopener">商品ページへ <span class="price">'+esc(p.priceText)+'</span></a>'+
         '</div>';
-      wrap.appendChild(item);
+      inner.appendChild(item);
     });
+    wrap.appendChild(inner);
     host.appendChild(wrap);
   });
 
